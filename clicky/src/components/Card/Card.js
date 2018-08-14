@@ -3,7 +3,7 @@ import "./Card.css"
 
 const Card = props => (
     <div className="card">
-        <img alt={props.name} src={props.image} />
+        <img alt={props.name} onClick={props.shuffleCards} src={props.image}/>
     </div>
 );
 
