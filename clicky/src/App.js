@@ -18,21 +18,24 @@ class App extends Component {
   //   const cards = this.state.cards.filter(card => card.id !== id);
   //   this.setState({ cards });
   // };
-  
+
   // map over this.state.cards to render component
   render() {
     return (
-      <Wrapper>
-      <Title>Dr. Seuss Click</Title>
-      {this.state.cards.map(card => (
-        <Card
-          id={card.id}
-          key={card.id}
-          name={card.name}
-          image={card.image}
-          />
-      ))}
-    </Wrapper>
+      <div>
+        <Navbar />
+        <Wrapper>
+          <Title>Dr. Seuss Click</Title>
+          {this.state.cards.map(card => (
+            <Card
+              id={card.id}
+              key={card.id}
+              name={card.name}
+              image={card.image}
+            />
+          ))}
+        </Wrapper>
+      </div>
     );
   }
 }
