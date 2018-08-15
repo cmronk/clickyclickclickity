@@ -1,8 +1,19 @@
-.title {
+.jumbotron {
   width: 100%;
+  height: auto;
   text-align: center;
-  /* font-family: 'Shadows Into Light', cursive; */
-  font-family: 'Allan', cursive;
+  font-family: 'Luckiest Guy', cursive;
   font-size: 3rem;
-  color: green;
+  background-image: url("https://images.fabric.com/images/400/400/DI-494.jpg");
+  /* background: url("https://images.fabric.com/images/400/400/0349260.jpg"); */
+  margin: 0;
+  border-bottom: 1px solid green;
+  border-radius: 0;
+}
+
+.title-container {
+  background: white;
+  opacity: 0.9;
+  padding: 20px;
+
 }

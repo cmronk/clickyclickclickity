@@ -24,8 +24,8 @@ class App extends Component {
     return (
       <div>
         <Navbar />
+        <Title>One Click, Two Click</Title>
         <Wrapper>
-          <Title>Dr. Seuss Click</Title>
           {this.state.cards.map(card => (
             <Card
               id={card.id}
