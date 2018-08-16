@@ -1,19 +1,18 @@
 import React from "react";
 import "./Navbar.css";
 
-// We use JSX curly braces to evaluate the style object on the JSX tag
-
-const Navbar = () => (
+const Navbar = props => (
   <nav className="navbar">
     <div className="nav-item">
-      One Click, Two Click...
+      Score:<span className="score"> {props.score}</span> | Top Score:<span className="topScore"> {props.topScore}</span>
     </div>
     <div className="nav-item">
-      Click an image to begin
+      {props.scoring}
     </div>
     <div className="nav-item">
-      Score:<span id="score">Test 0</span>
+      Horton Hears A Click...
     </div>
+
   </nav>
 );
 

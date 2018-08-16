@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   text-align: center;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Jua', sans-serif;
   font-size: 3rem;
   background-image: url("https://images.fabric.com/images/400/400/DI-494.jpg");
   /* background: url("https://images.fabric.com/images/400/400/0349260.jpg"); */
@@ -15,5 +15,9 @@
   background: white;
   opacity: 0.9;
   padding: 20px;
+  border: 1px solid green;
+}
 
+p {
+  font-size: 1rem;
 }
