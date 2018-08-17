@@ -38,7 +38,7 @@ class App extends Component {
   };
 
   handleIncrement = () => {
-    const newScore = this.state.score + 1;
+    let newScore = this.state.score + 1;
     this.setState({
       score: newScore,
       scoring: ""
@@ -49,8 +49,10 @@ class App extends Component {
         topScore: newScore
       })
     }
-    else if (newScore === 12) {
-      this.setState({ scoring: "You win!" })
+    if (newScore === 12) {
+      this.setState({ 
+        scoring: "You win! Click on an image to play again!" 
+      })
     }
   };
 

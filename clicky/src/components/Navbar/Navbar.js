@@ -12,7 +12,6 @@ const Navbar = props => (
     <div className="nav-item">
       Horton Hears A Click...
     </div>
-
   </nav>
 );
 
